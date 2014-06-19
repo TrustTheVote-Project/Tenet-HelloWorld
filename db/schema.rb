@@ -11,9 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140619111923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "csf_registration_requests", force: true do |t|
+    t.string   "organization_name",                 null: false
+    t.string   "state",                             null: false
+    t.string   "website"
+    t.string   "admin_name",                        null: false
+    t.string   "admin_title",                       null: false
+    t.string   "admin_email",                       null: false
+    t.string   "admin_phone"
+    t.boolean  "archived",          default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "csf_registration_requests", ["archived"], name: "index_csf_registration_requests_on_archived", using: :btree
 
 end
