@@ -1,7 +1,7 @@
-# This migration comes from csf (originally 20140620025125)
+# This migration comes from csf_engine (originally 20140620025125)
 class CreateCsfUsers < ActiveRecord::Migration
   def change
-    create_table :csf_users do |t|
+    create_table :users do |t|
       t.belongs_to :account, null: false, index: true
 
       t.string     :login, null: false, unique: true
