@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/resque/redis-namespace.git
-  revision: 96957722a23df56bb34c75f7d9916342993075c7
+  revision: 309f2cf2fcb0ab089bfc541679485c83017861e3
   specs:
     redis-namespace (1.5.0)
       redis (~> 3.0, >= 3.0.4)
@@ -97,7 +97,7 @@ GEM
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
     erubis (2.7.0)
-    execjs (2.2.0)
+    execjs (2.2.1)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.4.1)
