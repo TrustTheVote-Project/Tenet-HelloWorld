@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: 1419a6a517a7f90c25e16660ff3d7c2f0efc184f
+  revision: 8c0bc43104984e6f90a4ae9a625bfc405379b7ca
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
@@ -132,7 +132,7 @@ GEM
       haml (>= 3.1, < 5.0)
       railties (>= 4.0.1)
     hike (1.2.3)
-    i18n (0.6.9)
+    i18n (0.6.11)
     jbuilder (2.1.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
