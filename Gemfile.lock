@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/resque/redis-namespace.git
-  revision: 309f2cf2fcb0ab089bfc541679485c83017861e3
+  revision: e053fb96c22a8b65fd404c1982f20b2c4132b3fc
   specs:
     redis-namespace (1.5.0)
       redis (~> 3.0, >= 3.0.4)
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: d66f5a125c261b0f5992f6b5133e7097caafd8c7
+  revision: 9fffabf2ea4c9a01acc438beee4092b76976c9d9
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
