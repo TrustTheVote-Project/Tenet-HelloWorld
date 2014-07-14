@@ -8,8 +8,22 @@ urls:
   user_dashboard:  /user-dashboard
 
 email:
+  # Host of the app
+  host: bb.noizeramp.com
+
   # From-field of outgoing mail
   noreply: noreply@trustthevote.org
 
   # Super-admin email address(es) for notifications
   superadmin: admin@localhost.localdomain
+
+
+# --- DEVELOPMENT
+
+development:
+
+  email:
+    host: localhost
+    port: 3000
+    noreply: noreply@trustthevote.org
+    superadmin: admin@localhost.localdomain
