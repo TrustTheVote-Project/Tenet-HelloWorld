@@ -9,6 +9,7 @@
 # create US states
 us = Carmen::Country.named('United States')
 us.subregions.each { |r| State.create_with(name: r.name).find_or_create_by(code: r.code) unless r.type == 'ato' }
+State.create_with(name: '-- Other --').find_or_create_by(code: 'ZZ')
 
 st = State.create_with(name: 'Farallon').find_or_create_by(code: "FA")
 
