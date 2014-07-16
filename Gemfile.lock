@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: 2d556b60a47f9cee355ba15dcde16f33ea4ba794
+  revision: a8b77fb4148150ae187ca50991fc8642572b2297
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
@@ -217,7 +217,7 @@ GEM
     redis-store (1.1.4)
       redis (>= 2.2)
     ref (1.0.5)
-    request_store (1.0.6)
+    request_store (1.0.7)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
