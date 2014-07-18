@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717104512) do
+ActiveRecord::Schema.define(version: 20140718090157) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,17 @@ ActiveRecord::Schema.define(version: 20140717104512) do
 
   add_index "accounts", ["name"], name: "index_accounts_on_name", unique: true, using: :btree
   add_index "accounts", ["state_id"], name: "index_accounts_on_state_id", using: :btree
+
+  create_table "messages", force: true do |t|
+    t.integer  "account_id"
+    t.integer  "user_id"
+    t.string   "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "messages", ["account_id"], name: "index_messages_on_account_id", using: :btree
+  add_index "messages", ["user_id"], name: "index_messages_on_user_id", using: :btree
 
   create_table "registration_requests", force: true do |t|
     t.string   "organization_name",                 null: false
@@ -70,6 +81,7 @@ ActiveRecord::Schema.define(version: 20140717104512) do
     t.datetime "last_activity_at"
     t.boolean  "password_set",                    default: false, null: false
     t.string   "last_login_from_ip_address"
+    t.string   "role"
   end
 
   add_index "users", ["account_id"], name: "index_users_on_account_id", using: :btree
