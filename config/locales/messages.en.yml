@@ -1,0 +1,11 @@
+en:
+  messages:
+    index:
+      title: Message board
+      form:
+        message: Message
+        submit: Send message
+
+    create:
+      success: Message sent
+      not_allowed_to_create: You can't send messages

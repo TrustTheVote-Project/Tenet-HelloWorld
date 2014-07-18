@@ -1,0 +1,39 @@
+- @page_id = 'messages-index'
+
+= page_head
+
+- if can? :create, Message
+  .row
+    .col-md-12
+      %p= link_to "Send new message", "#", class: "js-new-message #{@message.errors.any? ? 'hide' : ''}"
+
+  .new-message{ class: @message.errors.any? ? nil : 'hide' }
+    .row
+      .col-md-10.col-md-offset-2
+        = form_errors @message, "Couldn't send your message"
+    .row
+      .col-md-12
+        = form_for @message, html: { role: 'form', class: 'form-horizontal' } do |f|
+          .form-group
+            = f.label :body, t(".form.message"), class: 'control-label col-md-2'
+            .col-md-6
+              = f.text_area :body, rows: 5, maxlength: 140, class: 'form-control'
+          .form-group
+            .col-md-offset-2.col-md-6
+              = f.submit t(".form.submit"), class: 'btn btn-default'
+              or
+              = link_to "Cancel", "#", class: 'js-cancel'
+
+.row
+  .col-md-12
+    %table.table.messages
+      %tr
+        %th.when When
+        %th.from From
+        %th.body Message
+
+      - if @messages.blank?
+        %tr
+          %td{ colspan: 3 } There are no messages yet
+      - else
+        = render @messages

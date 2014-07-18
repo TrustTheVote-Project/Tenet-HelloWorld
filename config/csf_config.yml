@@ -5,7 +5,7 @@ admin:
   login: admin
 
 urls:
-  user_dashboard:  /user-dashboard
+  user_dashboard:  /messages
 
 email:
   # Host of the app
@@ -17,6 +17,8 @@ email:
   # Super-admin email address(es) for notifications
   superadmin: admin@localhost.localdomain
 
+# User account roles
+user_roles: [ 'reader', 'writer' ]
 
 # --- DEVELOPMENT
 

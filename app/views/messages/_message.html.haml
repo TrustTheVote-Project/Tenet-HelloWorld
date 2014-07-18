@@ -1,0 +1,5 @@
+- m = message
+%tr
+  %td.when #{m.created_at.strftime('%d %b, %H:%M')}
+  %td.from #{m.user.full_name}
+  %td.body #{m.body}
