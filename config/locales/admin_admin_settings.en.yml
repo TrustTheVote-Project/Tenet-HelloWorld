@@ -1,0 +1,13 @@
+en:
+  admin_admin:
+    settings:
+      edit:
+        title: Settings
+
+        form:
+          message_length: Message length
+          message_length_help: 20 to 200 characters
+          submit: Save settings
+
+      update:
+        success: Settings updated

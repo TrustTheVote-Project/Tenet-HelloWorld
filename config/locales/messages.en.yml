@@ -2,6 +2,7 @@ en:
   messages:
     index:
       title: Message board
+      subtitle: ""
       form:
         message: Message
         submit: Send message

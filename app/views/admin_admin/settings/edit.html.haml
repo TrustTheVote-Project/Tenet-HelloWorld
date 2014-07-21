@@ -1,0 +1,16 @@
+- @page_id = 'settings-edit'
+
+= page_head
+
+.row
+  .col-md-12
+    = form_for @settings, url: :admin_admin_settings, html: { method: 'put', role: 'form', class: 'form-horizontal' } do |f|
+      .form-group
+        = f.label :message_length, t('.form.message_length'), class: 'control-label col-md-2'
+        .col-md-2
+          = f.text_field :message_length, class: 'form-control'
+          .help-block= t('.form.message_length_help')
+
+      .form-group
+        .col-md-6.col-md-offset-2
+          = f.submit t('.form.submit'), class: 'btn btn-primary'

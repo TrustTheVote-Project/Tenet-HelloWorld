@@ -3,7 +3,7 @@ class MessagesController < BaseController
   before_filter :require_user_acc
 
   def index
-    gon.maxMessageChars = 140
+    gon.maxMessageChars = Settings.message_length
     @messages   = Message.where(account: current_account).includes(:user).order('created_at DESC').limit(AppConfig['max_messages'])
     @message  ||= Message.new
     render :index

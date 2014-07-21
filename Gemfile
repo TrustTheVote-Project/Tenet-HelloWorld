@@ -24,6 +24,7 @@ gem 'redis-namespace', git: 'https://github.com/resque/redis-namespace.git'
 gem 'sidekiq'
 gem 'csf', git: 'https://github.com/trustthevote/CommonServicesFramework.git'
 gem 'cancancan', '~> 1.8'
+gem 'rails-settings-cached', '0.4.1'
 
 
 
