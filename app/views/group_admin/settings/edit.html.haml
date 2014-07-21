@@ -1,0 +1,15 @@
+- @page_id = 'ga-settings-edit'
+
+= page_head
+
+.row
+  .col-md-12
+    = form_for @settings, as: :settings, url: :group_admin_settings, html: { method: 'put', role: 'form', class: 'form-horizontal' } do |f|
+      .form-group
+        = f.label :message_board_subtitle, t('.form.message_board_subtitle'), class: 'control-label col-md-2'
+        .col-md-4
+          = f.text_field :message_board_subtitle, class: 'form-control'
+
+      .form-group
+        .col-md-6.col-md-offset-2
+          = f.submit t('.form.submit'), class: 'btn btn-primary'

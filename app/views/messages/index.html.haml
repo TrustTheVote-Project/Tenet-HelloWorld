@@ -1,6 +1,6 @@
 - @page_id = 'messages-index'
 
-= page_head
+= page_head subtitle: current_account.settings.message_board_subtitle
 
 - if can? :create, Message
   .row

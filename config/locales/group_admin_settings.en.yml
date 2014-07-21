@@ -1,0 +1,12 @@
+en:
+  group_admin:
+    settings:
+      edit:
+        title: Group settings
+
+        form:
+          message_board_subtitle: Message board subtitle
+          submit: Save settings
+
+      update:
+        success: Settings updated

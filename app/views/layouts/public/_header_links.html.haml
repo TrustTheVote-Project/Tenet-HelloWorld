@@ -2,7 +2,7 @@
   %ul.nav.nav-pills.pull-right
     - if group_admin?
       %li= link_to "Users", :group_admin_users
-      %li= link_to "App Management", :group_admin_app_management
+      %li= link_to "Settings", :edit_group_admin_settings
     - else
       %li= link_to "Messages", :messages
     %li= link_to "Logout", :logout
