@@ -11,5 +11,10 @@
           = f.text_field :message_board_subtitle, class: 'form-control'
 
       .form-group
+        = f.label :welcome_message, t('.form.welcome_message'), class: 'control-label col-md-2'
+        .col-md-4
+          = f.text_field :welcome_message, class: 'form-control'
+
+      .form-group
         .col-md-6.col-md-offset-2
           = f.submit t('.form.submit'), class: 'btn btn-primary'

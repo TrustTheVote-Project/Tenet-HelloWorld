@@ -20,6 +20,11 @@ email:
 # User account roles
 user_roles: [ 'reader', 'writer' ]
 
+# Hook to call after new group saving for further initialization
+account_hooks_class_name: AccountHooks
+account_after_create_method_name: after_create
+
+
 # --- DEVELOPMENT
 
 development:
