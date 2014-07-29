@@ -4,7 +4,7 @@ $ ->
   $('#message_body').characterCounter
     limit: gon.maxMessageChars
     counterFormat: '%1 characters remaining'
-    
+
   $('.js-new-message').on 'click', (e) ->
     e.preventDefault()
     $('.js-new-message, .new-message').toggleClass 'hide'
