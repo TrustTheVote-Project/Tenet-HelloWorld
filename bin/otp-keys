@@ -60,7 +60,6 @@ sed -i -e "/$match/d" $CSF_AUTHORIZED_KEYS_FILE
 # if adding the key, append it to the tail of the file
 if [ $operation == "set" ]
 then
-  echo "key given"
   new_line="command=\"$SCRIPT_DIR/otp-generate $user_id\" $key"
   echo $new_line >> $CSF_AUTHORIZED_KEYS_FILE
 fi
