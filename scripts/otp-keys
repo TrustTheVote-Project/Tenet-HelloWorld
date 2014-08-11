@@ -2,18 +2,18 @@
 #
 # Format of the authorized_keys file:
 #
-#   command="/home/deploy/app/current/bin/otp-generate 1234" ssh-rsa AAAAB3NzaC1yc2...
+#   command="/home/deploy/app/current/scripts/otp-generate 1234" ssh-rsa AAAAB3NzaC1yc2...
 #
 #
 # Usage:
 #
 # Setting or updating the key for user-id (set 'admin' for admin-admin):
 #
-#   bin/otp-keys set <user-id> <rsa-public-key>
+#   scripts/otp-keys set <user-id> <rsa-public-key>
 #
 # Deleting the key for the user:
 #
-#   bin/otp-keys del <user-id>
+#   scripts/otp-keys del <user-id>
 #
 
 # Location of the keys file
