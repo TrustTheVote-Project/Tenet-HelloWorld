@@ -2,7 +2,7 @@
 #
 # Format of the authorized_keys file:
 #
-#   command="/home/deploy/app/current/scripts/otp-generate 1234" ssh-rsa AAAAB3NzaC1yc2...
+#   environment="CSF_USER_ID=1234" ssh-rsa AAAAB3NzaC1yc2...
 #
 #
 # Usage:
@@ -54,12 +54,12 @@ then
 fi
 
 # delete the old key
-match="otp-generate $user_id\\\""
+match="CSF_USER_ID=$user_id\\\""
 sed -i -e "/$match/d" $CSF_AUTHORIZED_KEYS_FILE
 
 # if adding the key, append it to the tail of the file
 if [ $operation == "set" ]
 then
-  new_line="command=\"$SCRIPT_DIR/otp-generate $user_id\" $key"
+  new_line="environment=\"CSF_USER_ID=$user_id\" $key"
   echo $new_line >> $CSF_AUTHORIZED_KEYS_FILE
 fi
