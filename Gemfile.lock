@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: 8c4397b24c9e28347eff4946af4dd162ce8bc444
+  revision: f3634418181c5c6c18f017b1d362364e52f972f6
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
@@ -252,7 +252,7 @@ GEM
       rdoc (~> 4.0, < 5.0)
     shoulda-matchers (2.6.1)
       activesupport (>= 3.0.0)
-    sidekiq (3.2.1)
+    sidekiq (3.2.2)
       celluloid (>= 0.15.2)
       connection_pool (>= 2.0.0)
       json
