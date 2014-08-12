@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo $1
+echo "User ID: $CSF_USER_ID"
