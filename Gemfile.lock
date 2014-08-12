@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: f3634418181c5c6c18f017b1d362364e52f972f6
+  revision: b7c41e59f259026c63da907ea92535e82e5aac6e
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
@@ -20,7 +20,7 @@ GIT
       redis (~> 3.0.4)
       redis-rails
       sass-rails (~> 4.0.3)
-      sidekiq
+      sidekiq (= 3.2.1)
       sorcery
       sshkey
       therubyracer
@@ -252,7 +252,7 @@ GEM
       rdoc (~> 4.0, < 5.0)
     shoulda-matchers (2.6.1)
       activesupport (>= 3.0.0)
-    sidekiq (3.2.2)
+    sidekiq (3.2.1)
       celluloid (>= 0.15.2)
       connection_pool (>= 2.0.0)
       json
