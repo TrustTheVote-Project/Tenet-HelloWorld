@@ -19,3 +19,4 @@ fi
 
 cat > $CSF_AUTHORIZED_KEYS_FILE
 exit 0
+
