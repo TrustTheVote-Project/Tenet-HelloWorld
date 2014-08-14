@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/CommonServicesFramework.git
-  revision: c6482d3fa092eabd6759ccbe88e75ebec186f841
+  revision: 7f5460de6e2c8159f92eff6fc8d38e74e18629c7
   specs:
     csf (0.0.1)
       bootstrap-sass (~> 3.1.1)
