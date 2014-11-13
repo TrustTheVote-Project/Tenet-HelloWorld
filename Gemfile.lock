@@ -7,9 +7,9 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/Tenet-Framework.git
-  revision: 8fe02c695425c57e1217e2059f6865a62b741955
+  revision: 505d8dadc9f65aa3175db99e07067a2504eac13b
   specs:
-    csf (0.0.1)
+    tenet (0.0.1)
       bootstrap-sass (~> 3.1.1)
       carmen-rails
       coffee-rails (~> 4.0.0)
@@ -309,7 +309,6 @@ DEPENDENCIES
   capistrano-rails
   carmen-rails
   coffee-rails (~> 4.0.0)
-  csf!
   database_cleaner
   factory_girl_rails
   foreman
@@ -331,5 +330,6 @@ DEPENDENCIES
   shoulda-matchers
   sidekiq
   spring
+  tenet!
   therubyracer
   uglifier (>= 1.3.0)

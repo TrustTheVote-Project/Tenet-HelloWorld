@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root "csf/pages#landing"
+  root "tenet/pages#landing"
 
   resources :messages
 

@@ -5,18 +5,18 @@
 # sudo access to this script.
 
 # Location of the keys file
-if [ -z "$CSF_AUTHORIZED_KEYS_FILE" ]
+if [ -z "$TENET_AUTHORIZED_KEYS_FILE" ]
 then
-  CSF_AUTHORIZED_KEYS_FILE=/home/otp/.ssh/authorized_keys
+  TENET_AUTHORIZED_KEYS_FILE=/home/otp/.ssh/authorized_keys
 fi
 
-if [ ! -f $CSF_AUTHORIZED_KEYS_FILE ]
+if [ ! -f $TENET_AUTHORIZED_KEYS_FILE ]
 then
-  echo "ERROR: Keys file is missing -- $CSF_AUTHORIZED_KEYS_FILE"
-  echo "You can change path by setting CSF_AUTHORIZED_KEYS_FILE environment variable."
+  echo "ERROR: Keys file is missing -- $TENET_AUTHORIZED_KEYS_FILE"
+  echo "You can change path by setting TENET_AUTHORIZED_KEYS_FILE environment variable."
   exit 1
 fi
 
-cat > $CSF_AUTHORIZED_KEYS_FILE
+cat > $TENET_AUTHORIZED_KEYS_FILE
 exit 0
 
