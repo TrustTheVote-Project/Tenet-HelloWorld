@@ -6,7 +6,7 @@ GIT
       redis (~> 3.0, >= 3.0.4)
 
 GIT
-  remote: https://github.com/trustthevote/CommonServicesFramework.git
+  remote: https://github.com/trustthevote/Tenet-Framework.git
   revision: 8fe02c695425c57e1217e2059f6865a62b741955
   specs:
     csf (0.0.1)
