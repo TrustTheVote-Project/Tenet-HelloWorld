@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'bb'
-set :repo_url, 'git@github.com:alg/bulletin-board.git'
+set :repo_url, 'https://github.com/trustthevote/Tenet-HelloWorld.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
