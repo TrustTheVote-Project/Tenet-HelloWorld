@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root "tenet/pages#landing"
 
+  get '/about' => 'pages#about', as: 'bb_about'
+
   resources :messages
 
   namespace :group_admin do

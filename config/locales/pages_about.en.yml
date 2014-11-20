@@ -1,0 +1,39 @@
+en:
+  pages:
+    about:
+      title: About
+      body: >
+        <h4>Today’s Insufficient Authentication Methods</h4>
+
+        <p>When deploying a web app you basically have three choices for how to protect
+        administrative access:</p>
+
+        <ol>
+          <li>Weak authentication: Passwords.</li>
+
+          <li>Commercial strong authentication: Acquiring and supporting enterprise
+            solutions like RSA SecurID, and/or the use of corporate PKI.</li>
+
+          <li>Outsourced authentication: Oauth and ilk.</li>
+        </ol>
+
+        <p>None of these are suitable for many government organizations:</p>
+
+        <p>Option 1, of course, is way too risky, but people do it anyway because at
+        least they can.</p>
+
+        <p>Option 2 is great if your organization already does it. But if not – and
+        that's the case for the vast majority of state and local government
+        organizations – it’s probably not financially feasible.</p>
+
+        <p>Option 3 is undesirable on policy grounds because you can't rely on
+        third-party services to protect administrative access to your government app.
+        Also, Option 2 is considered best practice, and Option 3 falls short of it in
+        some people's opinion.</p>
+
+        <h4>The Common Services Framework Solution</h4>
+
+        <p>We provide an option that uses the same underlying strong
+        cryptography as Option 2, but without the cost. We’re using security technology
+        that is already available, but not used because it is not packaged for ease of
+        use, and not ready to be used with web apps.</p>
