@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/trustthevote/Tenet-Framework.git
-  revision: 034973735b50a24588048a621b75c00916ea5525
+  revision: 1e1f07fe8d2f37ba1768c7e13ffbb8a574f4e997
   specs:
     tenet (0.0.1)
       bootstrap-sass (~> 3.1.1)

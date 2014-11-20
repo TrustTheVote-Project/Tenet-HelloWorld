@@ -9,6 +9,6 @@
     %li= link_to "Logout", :logout
 - else
   %ul.nav.nav-pills.pull-right
-    %li= link_to "About", "#"
+    %li{ class: @menu_id == :about ? 'active' : nil }= link_to "About", "#"
     %li= link_to "Contacts", "#"
     %li= link_to "Download", "#", class: 'btn btn-download'
