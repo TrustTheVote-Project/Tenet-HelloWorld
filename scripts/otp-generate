@@ -27,7 +27,7 @@ encrypted_password=`echo -n $token | openssl dgst -sha1 | sed -e 's/^.*= //'`
 # Save password to db
 if [[ "$TENET_USER_ID" == "admin" ]]
 then
-  sql="WITH upsert AS (UPDATE tenet SET value='$salt' WHERE name='admin_salt' RETURNING *) INSERT INTO tenet (name, value) SELECT 'admin_salt', '$salt' WHERE NOT EXISTS (SELECT * FROM upsert); WITH upsert AS (UPDATE tenet SET value='$encrypted_password' WHERE name='admin_crypted_password' RETURNING *) INSERT INTO tenet (name, value) SELECT 'admin_crypted_password', '$encrypted_password' WHERE NOT EXISTS (SELECT * FROM upsert);"
+  sql="WITH upsert AS (UPDATE tenet_settings SET value='$salt' WHERE name='admin_salt' RETURNING *) INSERT INTO tenet_settings (name, value) SELECT 'admin_salt', '$salt' WHERE NOT EXISTS (SELECT * FROM upsert); WITH upsert AS (UPDATE tenet_settings SET value='$encrypted_password' WHERE name='admin_crypted_password' RETURNING *) INSERT INTO tenet_settings (name, value) SELECT 'admin_crypted_password', '$encrypted_password' WHERE NOT EXISTS (SELECT * FROM upsert);"
 else
   sql="UPDATE users SET crypted_password='$encrypted_password', salt='$salt', password_set='t' WHERE id=$TENET_USER_ID AND admin='t'"
 fi
